@@ -8,7 +8,7 @@
           "type": "os",
           "style": "plain",
           "foreground": "#26C6EE",
-          "template": "<#26C6EE>\uE62A </>"
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}}"
 
         },
         {
