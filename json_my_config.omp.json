@@ -9,7 +9,12 @@
           "style": "plain",
           "foreground": "#26C6EE",
           "template": "{{ if .WSL }}{{ end }}{{.Icon}} "
-
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "template": "{{ if eq .User \"root\" }}<#FF0000>{{ .User }}</>{{ else }}<#FFFF00>{{ .User }}</> ",
+          "foreground": "#FFFFFF" 
         },
         {
           "foreground": "#F1FA8C",
